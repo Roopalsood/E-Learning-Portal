@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+         Registration Page 
+        </title>
+        <style>
+            h1{
+                color: white;
+                margin-top: 50px;
+                font-weight: 500;
+            }
+            body{
+                font-family: helvetica;
+                background-color: rgb(205, 144, 249);
+            }
+            .signup{
+                background-color: rgb(208, 0, 255);
+                width: 100%;
+                color: rgb(255, 255, 255);
+                padding: 15px;
+                margin: 10px 0px;
+                border: none;
+                cursor: pointer;
+                font-weight: 100;
+            }
+            form{
+                border: 3px, solid, rgb(202, 193, 193);
+                width: 30%;
+                margin-top: 50px;
+            }
+            input[type=text], input[type=password]{
+                width: 100%;
+                margin: 8px 0;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px, solid white;
+                box-sizing: border-box;
+            }
+            .container{
+                padding: 25px;
+                background-color: rgb(238, 254, 255);
+            }
+            .home{
+                background-color: rgb(255, 255, 255);
+                float: right;
+                padding: 10px 50px 10px 50px;
+                font-weight: 100;
+                border: none;
+                color: black;
+                margin: 12px 12px;
+            }
+            label{
+                margin-right:100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <button class="home" onclick="document.location='index.html'">Home</button>
+        <br><br>
+        <center> <h1> Register Here </h1> 
+        <form> 
+            <div class="container">
+                <label>Username : </label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label>Email : </label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label>Password : </label>
+                <input type="text" placeholder="Enter Password" name="password" required>
+                <label>Confirm Password : </label>
+                <input type="text" placeholder="Enter Password Again" name="password" required>
+                <button class="signup" type="submit">Sign Up</button> 
+
+            </div>
+        </form> </center>
+    </body>
+</html>
